@@ -1,10 +1,16 @@
 body{
-  background-color: #E5E4E2;
+  /*background-color: #E5E4E2;*/
+  background-color: #A09996;
+  /*background-color: #918A86;*/
+  /*background-color: #83888C;*/
   padding: 0;
   margin: 0;
 }
 
 #nav_bar{
+  position:fixed;
+  top:0;
+  left: 0;
   width: 100%;
   height: 50px;
   background-color: black;
@@ -19,24 +25,4 @@ body{
   background-color: black;
   color: white;
   font-size: 18px;
-}
-
-#home{
-  width: 100%;
-  margin-top: 50px;
-}
-
-#resume{
-  width: 100%;
-  margin-top: 50px;
-}
-
-#hobbies{
-  width: 100%;
-  margin-top: 50px;
-}
-
-#contact{
-  width: 100%;
-  margin-top: 50px;
 }
