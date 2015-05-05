@@ -1,6 +1,6 @@
 body{
-  /*background-color: #E5E4E2;*/
-  background-color: #A09996;
+  background-color: #E5E4E2;
+  /*background-color: #A09996;*/
   /*background-color: #918A86;*/
   /*background-color: #83888C;*/
   padding: 0;
@@ -25,4 +25,20 @@ body{
   background-color: black;
   color: white;
   font-size: 18px;
+}
+
+#contact_button{
+  color: black;
+  background-color: #E5E4E2;
+}
+
+#contact{
+  margin-top: 50px;
+  padding-top: 100px;
+  color: black;
+  text-align: center;
+}
+
+.asterisk{
+  color: red;
 }

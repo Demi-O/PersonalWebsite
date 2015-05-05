@@ -5,10 +5,10 @@ html, body{
   background-color: #A09996;
   /*background-color: #918A86;*/
   /*background-color: #83888C;*/
-  /*background-color: white;*/
-  /*background-color: #E5E4E2;*/
+  background-color: white;
+  background-color: #E5E4E2;
   /*background-color: #E3D6C6;*/
-  background-color: #6E6E6E;
+  /*background-color: #6E6E6E;*/
 
   /*background-image: url("../images/IMG_8676 copy.jpg");
   background-repeat: no-repeat;
@@ -31,8 +31,8 @@ html, body{
   margin-right: -4px;
   border: none;
   background-color: black;
-  background-color: #FF5A09;
-  background-color: #F3843E;
+  /*background-color: #FF5A09;*/
+  /*background-color: #F3843E;*/
   color: white;
   font-size: 18px;
 }
