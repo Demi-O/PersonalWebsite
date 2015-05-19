@@ -1,14 +1,7 @@
 html, body{
   margin: 0;
-  height: 100%;
-  /*background-color: #E5E4E2;*/
-  background-color: #A09996;
-  /*background-color: #918A86;*/
-  /*background-color: #83888C;*/
-  background-color: white;
+  padding: 0;
   background-color: #E5E4E2;
-  /*background-color: #E3D6C6;*/
-  /*background-color: #6E6E6E;*/
 
   /*background-image: url("../images/IMG_8676 copy.jpg");
   background-repeat: no-repeat;
@@ -30,16 +23,16 @@ html, body{
   margin: 0;
   margin-right: -4px;
   border: none;
-  background-color: black;
-  /*background-color: #FF5A09;*/
-  /*background-color: #F3843E;*/
-  color: white;
+  /*background-color: #E5E4E2;*/
+  background-color: white;
+  color: black;
   font-size: 18px;
 }
 
 #home_button{
-  color: black;
-  background-color: #E5E4E2;
+  /*color: #E5E4E2;*/
+  color: white;
+  background-color: black;
 }
 
 #home{
