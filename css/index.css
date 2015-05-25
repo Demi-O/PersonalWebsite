@@ -1,11 +1,8 @@
 html, body{
   margin: 0;
   padding: 0;
-  background-color: #E5E4E2;
-
-  /*background-image: url("../images/IMG_8676 copy.jpg");
-  background-repeat: no-repeat;
-  background-size: 50% 100%;*/
+  background-color: #E8E8E8;
+  font-family: 'Raleway', sans-serif;
 }
 
 #nav_bar{
@@ -23,12 +20,13 @@ html, body{
   margin: 0;
   margin-right: -4px;
   border: none;
-  /*background-color: #E5E4E2;*/
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 18px;
+  font-weight: bold;
 }
 
+/*HOME*/
 #home_button{
   /*color: #E5E4E2;*/
   color: white;
@@ -36,14 +34,22 @@ html, body{
 }
 
 #home{
-  /*width: 100%;*/
-  /*height: 100%*/
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   /*margin-top: 50px;*/
+  z-index: -5;
   text-align: center;
   padding-top: 110px;
-  padding-left: 300px;
-  /*background-color: black;*/
+  background-color: white;
 }
+
+/*#hobbies_button{
+  height: 46px;
+  border-bottom: 4px solid #736AFF;
+  border-bottom-color: #990012;
+}*/
 
 #name{
   font-size: 50px;
@@ -55,4 +61,21 @@ html, body{
 
 #term{
   color: #FF5A09;
+}
+
+/*ABOUT*/
+#about{
+  text-align: center;
+  background-color: black;
+  color: white;
+  /*position: fixed;*/
+}
+
+/*CONTACT*/
+#contact{
+  text-align: center;
+}
+
+.asterisk{
+  color: red;
 }
