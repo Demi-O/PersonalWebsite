@@ -1,55 +1,88 @@
 html, body{
   margin: 0;
   padding: 0;
-  background-color: #E8E8E8;
+  /*background-color: #E8E8E8;*/
   font-family: 'Raleway', sans-serif;
 }
 
+/*GENERAL*/
+.big_div{
+  width: 100%;
+  background-color: #E8E8E8;
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.small_div{
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+.glyphicon{
+  font-size: 30px;
+}
+
+hr{
+  height: 12px;
+  margin: 0;
+  color: gray;
+  display: inline-block;
+  width: 45%;
+}
+
+.div_header{
+}
+
+h2{
+  font-size: 35px;
+}
+
+/*NAVIGATION BAR*/
 #nav_bar{
   position:fixed;
+  text-align: center;
   top:0;
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: black;
+  background-color: transparent;
+}
+
+#buttons{
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  background-color: transparent;
 }
 
 .top_buttons{
   height: 100%;
-  width: 25%;
+  width: 18%;
   margin: 0;
-  margin-right: -4px;
+  /*margin-right: -4px;*/
   border: none;
-  background-color: black;
-  color: white;
+  background-color: transparent;
+  color: black;
   font-size: 18px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 /*HOME*/
-#home_button{
-  /*color: #E5E4E2;*/
-  color: white;
-  background-color: black;
-}
-
 #home{
   width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  /*margin-top: 50px;*/
-  z-index: -5;
+  height: 100vh;
   text-align: center;
-  padding-top: 110px;
+  padding-top: 150px;
   background-color: white;
 }
 
-/*#hobbies_button{
+#home_button{
   height: 46px;
   border-bottom: 4px solid #736AFF;
   border-bottom-color: #990012;
-}*/
+}
 
 #name{
   font-size: 50px;
@@ -60,22 +93,61 @@ html, body{
 }
 
 #term{
-  color: #FF5A09;
+  color: #990012;
 }
 
 /*ABOUT*/
 #about{
-  text-align: center;
+  padding-bottom: 20px;
   background-color: black;
   color: white;
-  /*position: fixed;*/
+  overflow: hidden;
+  /*height: 300px;*/
 }
+
+#about_img{
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+  background: url("../images/Afrofest_2015.jpg") no-repeat;
+  float: left;
+  margin-left: 50px;
+}
+
+#about_description{
+  width: 60%;
+  display: inline-block;
+  word-wrap: normal;
+  font-size: 19px;
+  padding-top: 10px;
+}
+
+/*EXPERIENCE*/
+#experience{
+  background-color: black;
+  color: white;
+}
+
+/*HOBBIES*/
+
 
 /*CONTACT*/
 #contact{
+  margin: 0 auto;
   text-align: center;
+  width: 80%;
 }
 
 .asterisk{
   color: red;
+}
+
+/*END*/
+#end{
+  width: 100%;
+  height: 150px;
+  background-color: black;
 }

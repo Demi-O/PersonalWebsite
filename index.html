@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Demi Olagoke</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <script src="js/jquery-1.11.3.min.js"></script>
     <!-- !!!!!!!!!!!!CONTACT!!!!!!!!!!!!!!!!! -->
@@ -20,10 +21,13 @@
 </head>
 <body>
     <div id="nav_bar">
-      <button id="home_button" class="top_buttons" type="button">Home</button></a>
-      <button id="resume_button" class="top_buttons" type="button">Resume</button></a>
-      <button id="hobbies_button" class="top_buttons" type="button">Hobbies</button></a>
-      <button id="contact_button" class="top_buttons" type="button">Contact Me</button></a>
+      <div id="buttons">
+        <button id="home_button" class="top_buttons" type="button">Home</button></a>
+        <button id="about_button" class="top_buttons" type="button">About Me</button></a>
+        <button id="experience_button" class="top_buttons" type="button">Experience</button></a>
+        <button id="hobbies_button" class="top_buttons" type="button">Hobbies</button></a>
+        <button id="contact_button" class="top_buttons" type="button">Contact Me</button></a>
+      </div>
     </div>
 
   <div id="home">
@@ -32,42 +36,82 @@
     <img src="images/uwaterloologo.png" width="20%"/>
   </div>
 
-  <div id="about">
-    <h1>About Me</h1>
-    <p>
-      blah blah blah blah blah blah<br>
-      blah blah blah blah blah blah<br>
-      blah blah blah blah blah blah<br>
-      blah blah blah blah blah blah<br>
-      blah blah blah blah blah blah<br>
-      blah blah blah blah blah blah<br>
-    </p>
+  <div class="big_div">
+    <div id="about" class="small_div">
+      <div class="div_header">
+        <hr>
+        <span class="glyphicon glyphicon-user"></span>
+        <hr>
+        <br>
+        <h2>About Me</h2>
+      </div>
+      <div id="about_img"></div>
+      <div id="about_description">
+        <p>
+          I am a third year Software Engineering student at the University of Waterloo. January 2015 was when I developed my passion for personal growth, as a result of this I gained a thirst for knowledge and this has changed the way I live my life. I am constantly looking for opportunities to improve my developing skills and this has led to the developement of my personal website, finally attending a hackathon(Hack Western) and so much more. I not only try to develop myself mentally but also physically, if I am not in front of my laptop or enjoying the company of friends then I chances are that I am on the soccer field or learning a dance routine.
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div id="experience">
-
+  <div class="big_div">
+    <div id="experience" class="small_div">
+      <div>
+        <hr>
+        <span class="glyphicon glyphicon-time"></span>
+        <hr>
+        <br>
+        <h2>Experience Timeline</h2>
+      </div>
+    </div>
   </div>
 
-  <div id="hobbies">
+  <div class="big_div">
+    <div id="hobbies">
+      <hr>
+      <h2>Hobbies</h2>
+      <hr>
 
+      <div id="soccer" class="hobbies_pic">
+
+      </div>
+
+      <div id="developing" class="hobbies_pic">
+
+      </div>
+
+      <div id="dancing" class="hobbies_pic">
+
+      </div>
+
+      <div id="drawing" class="hobbies_pic">
+
+      </div>
+    </div>
   </div>
 
-  <div id="contact">
-    <form method="post" name="contact_form" action="">
-      Name<span class="asterisk">*</span>:<br>
-      <input type="text" name="name" placeholder="Name" required="required"/>
-      <br><br>
-      E-mail<span class="asterisk">*</span>:<br>
-      <input type="text" name="email" placeholder="E-Mail Address" required="required">
-      <br><br>
-      Phone Number:<br>
-      <input type="text" name="phone_number" placeholder="Phone Number"/>
-      <br><br>
-      Message<span class="asterisk">*</span>:<br>
-      <input type="text" name="message" placeholder="Message" required="required"/>
-      <br><br>
-      <input type="submit" value="Send Message"/>
-    </form>
+  <div class="big_div">
+    <hr>
+    <h2>Contact Me</h2>
+    <hr>
+
+    <div id="contact">
+      <form method="post" name="contact_form" action="">
+        Name<span class="asterisk">*</span>:<br>
+        <input type="text" name="name" placeholder="Name" required="required"/>
+        <br><br>
+        E-mail<span class="asterisk">*</span>:<br>
+        <input type="text" name="email" placeholder="E-Mail Address" required="required">
+        <br><br>
+        Phone Number:<br>
+        <input type="text" name="phone_number" placeholder="Phone Number"/>
+        <br><br>
+        Message<span class="asterisk">*</span>:<br>
+        <input type="text" name="message" placeholder="Message" required="required"/>
+        <br><br>
+        <input type="submit" value="Send Message"/>
+      </form>
+    </div>
   </div>
 
   <div id="end">

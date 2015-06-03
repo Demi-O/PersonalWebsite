@@ -6,9 +6,9 @@ var dancing_img = document.getElementById('dancing_img');
 
 window.addEventListener('load', function(){
   // HOBBIES
-  window.setInterval(changePictures, 5000);
+  //window.setInterval(changePictures, 5000);
 
-  // FORM
+  // CONTACT
   var formValidator = new Validator("contact_form");
   //Name
   formValidator.addValidation("name", "req", "Please provide your name");
