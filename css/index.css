@@ -132,13 +132,15 @@ h2{
 }
 
 /*HOBBIES*/
-
+#hobbies{
+  background-color: black;
+  color: white;
+}
 
 /*CONTACT*/
 #contact{
-  margin: 0 auto;
-  text-align: center;
-  width: 80%;
+  background-color: black;
+  color: white;
 }
 
 .asterisk{
