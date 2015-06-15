@@ -20,15 +20,15 @@
     </script>
 </head>
 <body>
-    <div id="nav_bar">
-      <div id="buttons">
-        <button id="home_button" class="top_buttons" type="button">Home</button></a>
-        <button id="about_button" class="top_buttons" type="button">About Me</button></a>
-        <button id="experience_button" class="top_buttons" type="button">Experience</button></a>
-        <button id="hobbies_button" class="top_buttons" type="button">Hobbies</button></a>
-        <button id="contact_button" class="top_buttons" type="button">Contact Me</button></a>
-      </div>
+  <div id="nav_bar">
+    <div id="buttons">
+      <button id="home_button" class="top_buttons" type="button">Home</button></a>
+      <button id="about_button" class="top_buttons" type="button">About Me</button></a>
+      <button id="experience_button" class="top_buttons" type="button">Experience</button></a>
+      <button id="hobbies_button" class="top_buttons" type="button">Hobbies</button></a>
+      <button id="contact_button" class="top_buttons" type="button">Contact Me</button></a>
     </div>
+  </div>
 
   <div id="home">
     <h1 id="name">Demi Olagoke<h1>
@@ -54,14 +54,24 @@
     </div>
   </div>
 
-  <div class="big_div">
+  <div class="big_div" id="experience_big_div">
     <div id="experience" class="small_div">
       <div>
         <hr>
-        <span class="glyphicon glyphicon-time"></span>
+        <span class="glyphicon glyphicon-briefcase"></span>
         <hr>
         <br>
-        <h2>Experience Timeline</h2>
+        <h2>Experience</h2>
+      </div>
+      <div class="exp_div">
+        <div class="exp_img">
+          <img src="images/uwaterloologo.png" width="100%"/>
+        </div>
+        <div class="exp_description">
+          Undergradaute Research Assistant
+          <br>
+          4 months
+        </div>
       </div>
     </div>
   </div>
@@ -91,7 +101,7 @@
     </div>
   </div>
 
-  <div class="big_div">
+  <div class="big_div" id="contact_big_div">
     <div id="contact" class="small_div">
       <hr>
       <span class="glyphicon glyphicon-envelope"></span>
@@ -120,7 +130,12 @@
   </div>
 
   <div id="end">
+    <div id="created">
+      2015 - Created by Demi Olagoke
+    </div>
+    <div id="icons">
 
+    </div>
   </div>
 
 <script src="js/index.js"></script>
