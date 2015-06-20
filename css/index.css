@@ -2,14 +2,12 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  /*background-color: #E8E8E8;*/
   font-family: 'Raleway', sans-serif;
 }
 
 /*GENERAL*/
 .big_div{
   width: 100%;
-  /*background-color: #E8E8E8;*/
   background-color: white;
   color: black;
   padding-top: 15px;
@@ -39,6 +37,7 @@ body{
   font-size: 30px;
   margin-left: 2%;
   margin-right: 2%;
+  color: #990012;
 }
 
 hr{
@@ -123,9 +122,9 @@ h2{
   display: inline-block;
   width: 300px;
   height: 300px;
-  border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
+  border-radius: 150px;
   background: url("../images/Afrofest_2015.jpg") no-repeat;
   float: left;
   margin-left: 50px;
@@ -144,6 +143,12 @@ h2{
   background-color: #E8E8E8;
 }
 
+.exp_year{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
 .exp_div{
   display: inline-block;
   text-align: center;
@@ -155,8 +160,8 @@ h2{
 .exp_img{
   width: 100%;
   height: 75%;
-  -webkit-border-radius: 10px 10px 0px 0px;
-	-moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+	-moz-border-radius: 15px 15px 0px 0px;
   border-radius: 15px 15px 0px 0px;
   background-color: white;
 }
@@ -167,19 +172,79 @@ h2{
   background-color: gray;
   color: white;
   text-align: center;
-  -webkit-border-radius: 0px 0px 10px 10px;
-	-moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 15px 15px;
+	-moz-border-radius: 0px 0px 15px 15px;
   border-radius: 0px 0px 15px 15px;
+  /*border: 1px solid #990012;*/
 }
 
 /*HOBBIES*/
 #hobbies{
+  background-color: white;
+}
 
+.hobbies_div{
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.hobbies_img{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+  border-radius: 150px;
+}
+
+#soccer_img{
+  background: url("../images/soccer_img.jpg") no-repeat;
 }
 
 /*CONTACT*/
 #contact{
   background-color: #E8E8E8;
+}
+
+#contact_form{
+  width: 60%;
+  height: 90%;
+  margin-left: 20%;
+  background-color: white;
+  padding: 20px 0px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #463E3F;
+}
+
+.contact_field{
+  font-weight: bold;
+}
+
+input{
+  width: 80%;
+  background-color: #E8E8E8;
+  -webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#message_box{
+  width: 80%;
+  height: 150px;
+  background-color: #E8E8E8;
+  font-weight: normal;
+  -webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#send_message_button{
+  width: 20%;
 }
 
 .asterisk{
@@ -190,6 +255,7 @@ h2{
 #end{
   width: 100%;
   height: auto;
+  background-color: #2B2B2B;
   background-color: black;
 }
 
@@ -201,10 +267,22 @@ h2{
   text-align: center;
   /*vertical-align: middle;*/
   line-height: 100px;
+  color: gray;
 }
 
 #icons{
   display: inline-block;
   height: 100%;
   width: 60%;
+  float: right;
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+
+.bottom_icons{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-top: 8px;
 }
