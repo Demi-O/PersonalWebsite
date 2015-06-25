@@ -5,8 +5,14 @@ var drawing_img = document.getElementById('drawing_img');
 var dancing_img = document.getElementById('dancing_img');
 
 window.addEventListener('load', function(){
+  //EXPERIENCE
+  $('.exp_full').hide();
+  $('#snake_logo').click(function(){
+    $('#exp_full_snake').show();
+  });
+
   // HOBBIES
-  //window.setInterval(changePictures, 5000);
+  //window.setInterval(changePictures, 1000);
 
   // CONTACT
   var formValidator = new Validator("contact_form");
@@ -26,6 +32,6 @@ window.addEventListener('load', function(){
 
 var changePictures = function(){
   picNumber++;
-  drawing_img.src = "../images/drawing" + picNumber % 2 + ".jpg";
-  dancing_img.src = "../images/dancing" + picNumber % 2 + ".jpg";
+  drawing_img.src = "images/drawing" + picNumber % 2 + ".jpg";
+  dancing_img.src = "images/dancing" + picNumber % 2 + ".jpg";
 }
