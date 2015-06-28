@@ -6,9 +6,9 @@ var dancing_img = document.getElementById('dancing_img');
 
 window.addEventListener('load', function(){
   //EXPERIENCE
-  $('.exp_full').hide();
+  $('.exp_full_div').hide();
   $('#snake_logo').click(function(){
-    $('#exp_full_snake').show();
+    $('#exp_full_snake').slideToggle();
   });
 
   // HOBBIES

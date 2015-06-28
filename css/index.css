@@ -178,10 +178,66 @@ h2{
   /*border: 1px solid #990012;*/
 }
 
-.exp_full{
+.exp_full_div{
   width: 100%;
-  height: 300px;
-  background-color: gray;
+  height: 400px;
+  background-color: #E8E8E8;
+  text-align: center;
+}
+
+.exp_full{
+  width: 70%;
+  height: 90%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+}
+
+.exp_full_top{
+  width: 100%;
+  height: 25%;
+  background-color: #2C3539;
+  padding: 10px 30px;
+  -webkit-border-radius: 35px 35px 0px 0px;
+	-moz-border-radius: 35px 35px 0px 0px;
+  border-radius: 35px 35px 0px 0px;
+  text-align: left;
+}
+
+.glyphicon.ignore{
+  position: default;
+  line-height: 0px;
+  font-size: inherit;
+  margin-left: 0;
+  margin-right: 0;
+  color: #990012;
+}
+
+.exp_full_p{
+  padding: 0;
+  margin: 0;
+}
+
+.exp_full_bottom{
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  -webkit-border-radius: 0px 0px 35px 35px;
+	-moz-border-radius: 0px 0px 35px 35px;
+  border-radius: 0px 0px 35px 35px;
+  border: 1px solid gray;
+  text-align: left;
+  padding: 30px;
+  padding-top: 10px;
+}
+
+.exp_full_desc{
+    margin-top:0;
+    color:#990012;
+    font-weight:700;
+    border-bottom:1px solid #707070;
+    padding-bottom:5px;
+    margin-bottom:5px
 }
 
 /*HOBBIES*/
