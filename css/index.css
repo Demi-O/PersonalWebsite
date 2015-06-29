@@ -12,7 +12,7 @@ body{
   color: black;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid silver;
 }
 
 #experience_big_div{
@@ -45,9 +45,9 @@ hr{
   border: none;
   margin: 0;
   color: gray;
-  background-color: gray;
+  background-color: #B6B6B4;
   display: inline-block;
-  width: 45%;
+  width: 44%;
 }
 
 .div_header{
@@ -204,18 +204,33 @@ h2{
   text-align: left;
 }
 
+.exp_full_title{
+    margin-top:0;
+    color:#808080;
+    color: #990012;
+    font-weight:bold;
+    border-bottom:1px solid #707070;
+    padding-bottom:5px;
+    margin-bottom:5px
+}
+
 .glyphicon.ignore{
   position: default;
   line-height: 0px;
   font-size: inherit;
   margin-left: 0;
-  margin-right: 0;
-  color: #990012;
+  margin-right: 4px;
+  color: gray;
 }
 
 .exp_full_p{
   padding: 0;
-  margin: 0;
+  margin: 3px;
+}
+
+small{
+  color: gray;
+  font-size: 14px;
 }
 
 .exp_full_bottom{
@@ -229,15 +244,6 @@ h2{
   text-align: left;
   padding: 30px;
   padding-top: 10px;
-}
-
-.exp_full_desc{
-    margin-top:0;
-    color:#990012;
-    font-weight:700;
-    border-bottom:1px solid #707070;
-    padding-bottom:5px;
-    margin-bottom:5px
 }
 
 /*HOBBIES*/
