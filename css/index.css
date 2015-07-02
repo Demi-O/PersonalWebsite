@@ -147,6 +147,7 @@ h2{
   width: 100%;
   text-align: center;
   font-size: 30px;
+  margin-top: 25px;
 }
 
 .exp_div{
@@ -178,8 +179,9 @@ h2{
 }
 
 .exp_full{
+  display: block;
   width: 850px;
-  min-height: 320px;
+  min-height: 0px;
   padding: 0px 5px;
   margin: 0 auto;
 }
