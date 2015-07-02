@@ -6,37 +6,37 @@ var dancing_img = document.getElementById('dancing_img');
 
 window.addEventListener('load', function(){
   //EXPERIENCE
-  $('.exp_full_div').hide();
+  $('.exp_full').hide();
   //div drops
   //2015
   $('#snake_image').click(function(){
-    $('.exp_full_div').not('#exp_full_snake').slideUp();
+    $('.exp_full').not('#exp_full_snake').slideUp();
     $('#exp_full_snake').slideToggle();
   });
   $('#pWebsite_image').click(function(){
-    $('.exp_full_div').not('#exp_full_pWebsite').slideUp();
+    $('.exp_full').not('#exp_full_pWebsite').slideUp();
     $('#exp_full_pWebsite').slideToggle();
   });
   $('#URA_image').click(function(){
-    $('.exp_full_div').not('#exp_full_URA').slideUp();
+    $('.exp_full').not('#exp_full_URA').slideUp();
     $('#exp_full_URA').slideToggle();
   });
   //2014
   $('#mabels_image').click(function(){
-    $('.exp_full_div').not('#exp_full_mabels').slideUp();
+    $('.exp_full').not('#exp_full_mabels').slideUp();
     $('#exp_full_mabels').slideToggle();
   });
   $('#blackberry_image').click(function(){
-    $('.exp_full_div').not('#exp_full_blackberry').slideUp();
+    $('.exp_full').not('#exp_full_blackberry').slideUp();
     $('#exp_full_blackberry').slideToggle();
   });
   //2013
   $('#tictac_image').click(function(){
-    $('.exp_full_div').not('#exp_full_tictac').slideUp();
+    $('.exp_full').not('#exp_full_tictac').slideUp();
     $('#exp_full_tictac').slideToggle();
   });
   $('#fortune_image').click(function(){
-    $('.exp_full_div').not('#exp_full_fortune').slideUp();
+    $('.exp_full').not('#exp_full_fortune').slideUp();
     $('#exp_full_fortune').slideToggle();
   });
 
