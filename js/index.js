@@ -1,8 +1,6 @@
 'use strict'
 
 var picNumber = 0;
-var drawing_img = document.getElementById('drawing_img');
-var dancing_img = document.getElementById('dancing_img');
 
 window.addEventListener('load', function(){
   //EXPERIENCE
@@ -41,9 +39,30 @@ window.addEventListener('load', function(){
   });
 
   // HOBBIES
-  //window.setInterval(changePictures, 1000);
+  window.setInterval(changePictures, 5000);
 
   // CONTACT
+  $('#contact_form').hide();
+  //clicks
+  $('#linkedin_connect').click(function(){
+    window.location.href = "https://ca.linkedin.com/pub/demi-olagoke/47/257/583";
+  });
+  $('#github_connect').click(function(){
+    window.location.href = "https://github.com/Demi-O";
+  });
+  $('#instagram_connect').click(function(){
+    window.location.href = "https://instagram.com/demiolagoke/";
+  });
+  $('#message_connect').click(function(){
+    $('#contact_form').slideToggle();
+  });
+  //animations
+  $('.connect_div').hover(function(){
+    $(this).stop().animate({'margin-bottom':'60px'}, 700);
+  }, function(){
+    $(this).stop().animate({'margin-bottom':'30px'}, 500);
+  });
+
   var formValidator = new Validator("contact_form");
   //Name
   formValidator.addValidation("name", "req", "Please provide your name");
@@ -61,6 +80,6 @@ window.addEventListener('load', function(){
 
 var changePictures = function(){
   picNumber++;
-  drawing_img.src = "images/drawing" + picNumber % 2 + ".jpg";
-  dancing_img.src = "images/dancing" + picNumber % 2 + ".jpg";
+  $('#drawing_img').css('background-image', 'url(images/drawing' + picNumber % 2 + '.jpg)');
+  //dancing_img.src = "images/dancing" + picNumber % 2 + ".jpg";
 }

@@ -165,6 +165,98 @@ h2{
 	-moz-border-radius: 15px 15px 0px 0px;
   border-radius: 15px 15px 0px 0px;
   background-color: white;
+  cursor: pointer;
+  position: relative;
+	transition: all 0.4s ease-in-out;
+}
+
+#snake_image{
+  background-image: url("../images/unity_logo.png");
+  background-position: 45% 0%;
+  background-repeat: no-repeat;
+  background-size: 83% 120%;
+}
+
+#pWebsite_image{
+  background-image: url("../images/web_dev.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#URA_image{
+  background-image: url("../images/uwaterloologo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mabels_image{
+  background-image: url("../images/mabels_labels.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 95% 100%;
+}
+
+#blackberry_image{
+  background-image: url("../images/blackberry_logo.png");
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#tictac_image{
+  background-image: url("../images/android_logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fortune_image{
+  background-image: url("../images/android_logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exp_info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  -webkit-border-radius: 15px 15px 0px 0px;
+	-moz-border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+
+.exp_info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 18px;
+	margin: 0 30px;
+	padding: 65px 0 0 0;
+	height: 110px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.exp_img:hover {
+	box-shadow:
+		inset 0 0 0 125px rgba(0,0,0, 0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.exp_img:hover .exp_info {
+	opacity: 1;
+	transform: scale(1);
 }
 
 .exp_description{
@@ -258,35 +350,154 @@ small{
 
 .hobbies_div{
   display: inline-block;
-  text-align: center;
   margin: 20px;
   width: 250px;
   height: 250px;
-  -webkit-border-radius: 125px;
-	-moz-border-radius: 125px;
-  border-radius: 125px;
-  overflow: hidden;
+  -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+  border-radius: 50%;
+  perspective: 900px;
 }
 
-.hobbies_img{
-  width: 100%;
-  height: 100%;
+.hobbies_info{
+  position: absolute;
+	width: 100%;
+	height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 
-/*CONTACT*/
-#contact{
+.hobbies_info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	transition: all 0.4s linear;
+	transform-origin: 50% 0%;
+}
+
+.hobbies_info .hobbies_info_back {
+  -webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+  -moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	background: #000;
+	opacity: 0;
+}
+
+#soccer_img{
+  background-image: url("../images/soccer.jpg");
+}
+
+#developing_img{
+  background-image: url("../images/developing.jpg");
+}
+
+#dancing_img{
+  background-image: url("../images/dancing1.jpg");
+}
+
+#drawing_img{
+  background-image: url("../images/drawing0.jpg");
+}
+
+.hobbies_info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 24px;
+	padding: 50px 0 0 0;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.hobbies_div:hover .hobbies_info_front {
+  -webkit-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+  -moz-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	opacity: 0;
+}
+
+.hobbies_div:hover .hobbies_info_back {
+  -webkit-transform: rotate3d(1,0,0,0deg);
+  -moz-transform: rotate3d(1,0,0,0deg);
+	transform: rotate3d(1,0,0,0deg);
+	opacity: 1;
+}
+
+.hobbies_info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+
+/*CONNECT*/
+#connect{
   background-color: #E8E8E8;
+}
+
+.connect_div{
+  display: inline-block;
+  position: relative;
+  margin: 30px;
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#linkedin_connect{
+  background-image: url("../images/linkedin_icon.png");
+  background-size: 65% 65%;
+  background-color: #007BB6;
+}
+
+#github_connect{
+  background-image: url("../images/github_icon.png");
+  background-size: 75% 75%;
+  background-color: #2B2B2B;
+}
+
+#instagram_connect{
+  background-image: url("../images/instagram_icon.png");
+  background-size: 60% 60%;
+  background-color: #517FA4;
+}
+
+#message_connect{
+  background-image: url("../images/envelope.png");
+  background-size: 85% 50%;
+  background-color: #AAD450;
+}
+
+.glyphicon.connect{
+  line-height: 150px;
+  margin: 0;
+  color: white;
+  font-size: 100px;
 }
 
 #contact_form{
   width: 60%;
   height: 90%;
-  margin-left: 20%;
+  margin: 0 auto;
   background-color: white;
   padding: 20px 0px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-	-moz-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+  border-radius: 10px;
   border: 2px solid #463E3F;
 }
 
