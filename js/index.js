@@ -1,66 +1,109 @@
-'use strict'
+"use strict"
 
 var picNumber = 0;
 
-window.addEventListener('load', function(){
+window.addEventListener("load", function(){
+  //NAV BAR
+  $("#home_button").click(function() {
+    $("html,body").animate({
+        scrollTop: $("#home").offset().top - 50},
+        1100);
+  });
+  $("#about_button").click(function() {
+    $("html,body").animate({
+        scrollTop: $("#about").offset().top - 50},
+        1100);
+  });
+  $("#experience_button").click(function() {
+    $("html,body").animate({
+        scrollTop: $("#experience").offset().top - 50},
+        1100);
+  });
+  $("#hobbies_button").click(function() {
+    $("html,body").animate({
+        scrollTop: $("#hobbies").offset().top - 50},
+        1100);
+  });
+  $("#connect_button").click(function() {
+    $("html,body").animate({
+        scrollTop: $("#connect").offset().top - 50},
+        1100);
+  });
+
   //EXPERIENCE
-  $('.exp_full').hide();
+  $(".exp_full").hide();
   //div drops
+  $(".exp_img").click(function(){
+    var htmlString = $(this).find(".exp_info").html();
+    if(htmlString.indexOf("<h3>+</h3>") > -1){
+      $(".exp_img").find(".exp_info").html("<h3>+</h3>");
+      $(this).find(".exp_info").html("<h3>-</h3>");
+      $("html,body").animate({
+          scrollTop: $(this).offset().top - 10},
+          800);
+    }
+    else{
+      $(this).find(".exp_info").html("<h3>+</h3>");
+      $("html,body").animate({
+          scrollTop: $(this).offset().top - 100},
+          700);
+    }
+  });
   //2015
-  $('#snake_image').click(function(){
-    $('.exp_full').not('#exp_full_snake').slideUp();
-    $('#exp_full_snake').slideToggle();
+  $("#snake_image").click(function(){
+    $(".exp_full").not("#exp_full_snake").slideUp();
+    $("#exp_full_snake").slideToggle();
   });
-  $('#pWebsite_image').click(function(){
-    $('.exp_full').not('#exp_full_pWebsite').slideUp();
-    $('#exp_full_pWebsite').slideToggle();
+  $("#pWebsite_image").click(function(){
+    $(".exp_full").not("#exp_full_pWebsite").slideUp();
+    $("#exp_full_pWebsite").slideToggle();
   });
-  $('#URA_image').click(function(){
-    $('.exp_full').not('#exp_full_URA').slideUp();
-    $('#exp_full_URA').slideToggle();
+  $("#URA_image").click(function(){
+    $(".exp_full").not("#exp_full_URA").slideUp();
+    $("#exp_full_URA").slideToggle();
   });
   //2014
-  $('#mabels_image').click(function(){
-    $('.exp_full').not('#exp_full_mabels').slideUp();
-    $('#exp_full_mabels').slideToggle();
+  $("#mabels_image").click(function(){
+    $(".exp_full").not("#exp_full_mabels").slideUp();
+    $("#exp_full_mabels").slideToggle();
   });
-  $('#blackberry_image').click(function(){
-    $('.exp_full').not('#exp_full_blackberry').slideUp();
-    $('#exp_full_blackberry').slideToggle();
+  $("#blackberry_image").click(function(){
+    $(".exp_full").not("#exp_full_blackberry").slideUp();
+    $("#exp_full_blackberry").slideToggle();
   });
   //2013
-  $('#tictac_image').click(function(){
-    $('.exp_full').not('#exp_full_tictac').slideUp();
-    $('#exp_full_tictac').slideToggle();
+  $("#tictac_image").click(function(){
+    $(".exp_full").not("#exp_full_tictac").slideUp();
+    $("#exp_full_tictac").slideToggle();
   });
-  $('#fortune_image').click(function(){
-    $('.exp_full').not('#exp_full_fortune').slideUp();
-    $('#exp_full_fortune').slideToggle();
+  $("#fortune_image").click(function(){
+    $(".exp_full").not("#exp_full_fortune").slideUp();
+    $("#exp_full_fortune").slideToggle();
   });
 
   // HOBBIES
   window.setInterval(changePictures, 5000);
 
   // CONTACT
-  $('#contact_form').hide();
+  $("#contact_form").hide();
   //clicks
-  $('#linkedin_connect').click(function(){
+  $("#linkedin_connect").click(function(){
     window.location.href = "https://ca.linkedin.com/pub/demi-olagoke/47/257/583";
   });
-  $('#github_connect').click(function(){
+  $("#github_connect").click(function(){
     window.location.href = "https://github.com/Demi-O";
   });
-  $('#instagram_connect').click(function(){
+  $("#instagram_connect").click(function(){
     window.location.href = "https://instagram.com/demiolagoke/";
   });
-  $('#message_connect').click(function(){
-    $('#contact_form').slideToggle();
+  $("#message_connect").click(function(){
+    $("#contact_form").slideToggle();
   });
   //animations
-  $('.connect_div').hover(function(){
-    $(this).stop().animate({'margin-bottom':'60px'}, 700);
+  $(".connect_div").hover(function(){
+    $(this).stop().animate({"margin-bottom":"60px"}, 700);
   }, function(){
-    $(this).stop().animate({'margin-bottom':'30px'}, 500);
+    $(this).stop().animate({"margin-bottom":"30px"}, 500);
   });
 
   var formValidator = new Validator("contact_form");
@@ -80,6 +123,6 @@ window.addEventListener('load', function(){
 
 var changePictures = function(){
   picNumber++;
-  $('#drawing_img').css('background-image', 'url(images/drawing' + picNumber % 2 + '.jpg)');
+  $("#drawing_img").css("background-image", "url(images/drawing" + picNumber % 2 + ".jpg)");
   //dancing_img.src = "images/dancing" + picNumber % 2 + ".jpg";
 }
