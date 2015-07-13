@@ -1,32 +1,39 @@
 "use strict"
 
 var picNumber = 0;
+var navbarTransparencyHeight = 150;
+var navbarTransparency = false;
+var animatingNavbar = false;
 
 window.addEventListener("load", function(){
   //NAV BAR
-  $("#home_button").click(function() {
+  if($(window).scrollTop() <= navbarTransparencyHeight){
+    $("#nav_bar").css("background-color","rgba(0, 0, 0, 0)");
+    navbarTransparency = true;
+  }
+  $("#home_link").click(function() {
     $("html,body").animate({
-        scrollTop: $("#home").offset().top - 50},
+        scrollTop: $("#home").offset().top - 80},
         1100);
   });
-  $("#about_button").click(function() {
+  $("#about_link").click(function() {
     $("html,body").animate({
-        scrollTop: $("#about").offset().top - 50},
+        scrollTop: $("#about").offset().top - 80},
         1100);
   });
-  $("#experience_button").click(function() {
+  $("#experience_link").click(function() {
     $("html,body").animate({
-        scrollTop: $("#experience").offset().top - 50},
+        scrollTop: $("#experience").offset().top - 80},
         1100);
   });
-  $("#hobbies_button").click(function() {
+  $("#hobbies_link").click(function() {
     $("html,body").animate({
-        scrollTop: $("#hobbies").offset().top - 50},
+        scrollTop: $("#hobbies").offset().top - 80},
         1100);
   });
-  $("#connect_button").click(function() {
+  $("#connect_link").click(function() {
     $("html,body").animate({
-        scrollTop: $("#connect").offset().top - 50},
+        scrollTop: $("#connect").offset().top - 80},
         1100);
   });
 
@@ -98,12 +105,24 @@ window.addEventListener("load", function(){
   });
   $("#message_connect").click(function(){
     $("#contact_form").slideToggle();
+    if($("#contact_form").is(":visible")) {
+      $("html,body").animate({
+          scrollTop: $("#message_connect").offset().top + 50},
+          400);
+    }
+    else{
+      $("html,body").animate({
+          scrollTop: $("#message_connect").offset().top},
+          300);
+    }
   });
   //animations
-  $(".connect_div").hover(function(){
-    $(this).stop().animate({"margin-bottom":"60px"}, 700);
-  }, function(){
-    $(this).stop().animate({"margin-bottom":"30px"}, 500);
+  $(".connect_div").hover(
+    function(){
+      $(this).stop().animate({"margin-bottom":"60px"}, 700);
+    },
+    function(){
+      $(this).stop().animate({"margin-bottom":"30px"}, 500);
   });
 
   var formValidator = new Validator("contact_form");
@@ -120,6 +139,24 @@ window.addEventListener("load", function(){
   formValidator.addValidation("message", "maxlen=400", "Max length for a message is 400 characters");
 });
 
+$(window).scroll(function(){
+  if ($(window).scrollTop() <= navbarTransparencyHeight && navbarTransparency == false &&
+  animatingNavbar == false) {
+    navbarTransparency = true;
+    animatingNavbar = true;
+    $("#nav_bar").stop().animate({backgroundColor:  "rgba(0, 0, 0, 0)"}, 400, function() {
+    	animatingNavbar = false;
+    });
+  }
+  else if ($(window).scrollTop() > navbarTransparencyHeight && navbarTransparency == true &&
+  animatingNavbar == false){
+    navbarTransparency = false;
+ 	  animatingNavbar = true;
+  	$("#nav_bar").stop().animate({backgroundColor:  "rgba(0, 0, 0, 0.85)"}, 400, function() {
+  		animatingNavbar = false;
+  	});
+ 	}
+});
 
 var changePictures = function(){
   picNumber++;

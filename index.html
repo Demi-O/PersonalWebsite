@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Demi Olagoke</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <!-- !!!!!!!!!!!!CONTACT!!!!!!!!!!!!!!!!! -->
     <script>
       $(document).ready(function(){
@@ -20,35 +22,18 @@
     </script>
 </head>
 <body>
-  <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div>
-      <ul class="nav navbar-nav">
-  			<li><a href="#home" class="smoothScroll">Home</a></li>
-  			<li> <a href="#about" class="smoothScroll">About</a></li>
-        <li> <a href="#experience" class="smoothScroll">Experience</a></li>
-        <li> <a href="#hobbies" class="smoothScroll">Hobbies</a></li>
-  			<li> <a href="#connect" class="smoothScroll">Connect</a></li
-  		</ul>
-    </div>
+  <div id="nav_bar">
+    <ul>
+			<li id="home_link"><a>Home</a></li>
+			<li id="about_link"><a>About</a></li>
+      <li id="experience_link"><a>Experience</a></li>
+      <li id="hobbies_link"><a>Hobbies</a></li>
+			<li id="connect_link"><a>Connect</a></li>
+		</ul>
   </div>
-</nav> -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid" id="nav_bar">
-      <div id="buttons">
-        <button id="home_button" class="top_buttons" type="button">Home</button>
-        <button id="about_button" class="top_buttons" type="button">About Me</button>
-        <button id="experience_button" class="top_buttons" type="button">Experience</button>
-        <button id="hobbies_button" class="top_buttons" type="button">Hobbies</button>
-        <button id="connect_button" class="top_buttons" type="button">Connect</button>
-      </div>
-    </div>
-  </nav>
 
   <div id="home">
     <h1 id="name">Demi Olagoke<h1>
-    <h2 id="class"><span id="term">3A</span> Software Engineering<h2>
-    <img src="images/uwaterloologo.png" width="20%"/>
   </div>
 
   <div class="big_div">
@@ -556,7 +541,7 @@
           <textarea id="message_box" name="message" rows="8" placeholder="Message"></textarea>
           <br><br>
 
-          <input type="submit" id="send_message_button" value="Send Message"/>
+          <input type="submit" id="send_message_link" value="Send Message"/>
         </form>
       </div>
     </div>
