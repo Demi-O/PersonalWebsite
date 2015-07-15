@@ -4,6 +4,8 @@ var picNumber = 0;
 var navbarTransparencyHeight = 150;
 var navbarTransparency = false;
 var animatingNavbar = false;
+var linkBorderBottom = "solid 3px red";
+var linkTopOffset = 100;
 
 window.addEventListener("load", function(){
   //NAV BAR
@@ -139,6 +141,14 @@ window.addEventListener("load", function(){
   formValidator.addValidation("message", "maxlen=400", "Max length for a message is 400 characters");
 });
 
+function isScrolledIntoView(element){
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
+  var elementTop = $(element).offset().top;
+  var elementBottom = elementTop + $(element).height();
+  return ((elementBottom >= docViewTop) && (elementTop <= docViewBottom) && (elementBottom <= docViewBottom) && (elementTop >= docViewTop));
+}
+
 $(window).scroll(function(){
   if ($(window).scrollTop() <= navbarTransparencyHeight && navbarTransparency == false &&
   animatingNavbar == false) {
@@ -156,6 +166,30 @@ $(window).scroll(function(){
   		animatingNavbar = false;
   	});
  	}
+
+  //Link border bottom loop
+  //from bottom to top
+  if($(this).scrollTop() >= $("#hobbies").position().top - linkTopOffset){
+    $("#nav_bar li").css("border-bottom", "none");
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $("#connect_link").css("border-bottom", linkBorderBottom);
+    }
+    else{
+      $("#hobbies_link").css("border-bottom", linkBorderBottom);
+    }
+  }
+  else if($(this).scrollTop() >= $("#experience").position().top - linkTopOffset){
+    $("#nav_bar li").css("border-bottom", "none");
+    $("#experience_link").css("border-bottom", linkBorderBottom);
+  }
+  else if($(this).scrollTop() >= $("#about").position().top - linkTopOffset){
+    $("#nav_bar li").css("border-bottom", "none");
+    $("#about_link").css("border-bottom", linkBorderBottom);
+  }
+  else if($(this).scrollTop() >= $("#home").position().top - linkTopOffset){
+    $("#nav_bar li").css("border-bottom", "none");
+    $("#home_link").css("border-bottom", linkBorderBottom);
+  }
 });
 
 var changePictures = function(){
