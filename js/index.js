@@ -4,13 +4,13 @@ var picNumber = 0;
 var navbarTransparencyHeight = 150;
 var navbarTransparency = false;
 var animatingNavbar = false;
-var linkBorderBottom = "solid 3px red";
+var linkBorderBottom = "2px solid white";
 var linkTopOffset = 100;
 
 window.addEventListener("load", function(){
   //NAV BAR
   if($(window).scrollTop() <= navbarTransparencyHeight){
-    $("#nav_bar").css("background-color","rgba(0, 0, 0, 0)");
+    $("#nav_bar").css("background-color","rgba(47, 79, 79, 0.7)");
     navbarTransparency = true;
   }
   $("#home_link").click(function() {
@@ -38,6 +38,14 @@ window.addEventListener("load", function(){
         scrollTop: $("#connect").offset().top - 80},
         1100);
   });
+
+  $("#nav_bar li").hover(
+    function() {
+      $(this).children("a").css("font-size", "20px");
+    }, function() {
+        $( this ).children("a").css("font-size", "17px");
+    }
+  );
 
   //EXPERIENCE
   $(".exp_full").hide();
@@ -121,10 +129,10 @@ window.addEventListener("load", function(){
   //animations
   $(".connect_div").hover(
     function(){
-      $(this).stop().animate({"margin-bottom":"60px"}, 700);
+      $(this).stop().animate({"bottom":"20px"}, 500);
     },
     function(){
-      $(this).stop().animate({"margin-bottom":"30px"}, 500);
+      $(this).stop().animate({"bottom":"0px"}, 400);
   });
 
   var formValidator = new Validator("contact_form");
@@ -150,27 +158,27 @@ function isScrolledIntoView(element){
 }
 
 $(window).scroll(function(){
-  if ($(window).scrollTop() <= navbarTransparencyHeight && navbarTransparency == false &&
-  animatingNavbar == false) {
-    navbarTransparency = true;
-    animatingNavbar = true;
-    $("#nav_bar").stop().animate({backgroundColor:  "rgba(0, 0, 0, 0)"}, 400, function() {
-    	animatingNavbar = false;
-    });
-  }
-  else if ($(window).scrollTop() > navbarTransparencyHeight && navbarTransparency == true &&
-  animatingNavbar == false){
-    navbarTransparency = false;
- 	  animatingNavbar = true;
-  	$("#nav_bar").stop().animate({backgroundColor:  "rgba(0, 0, 0, 0.85)"}, 400, function() {
-  		animatingNavbar = false;
-  	});
- 	}
+  // if ($(window).scrollTop() <= navbarTransparencyHeight && navbarTransparency == false &&
+  // animatingNavbar == false) {
+  //   navbarTransparency = true;
+  //   animatingNavbar = true;
+  //   $("#nav_bar").stop().animate({backgroundColor:  "rgba(47, 79, 79, 0)"}, 400, function() {
+  //   	animatingNavbar = false;
+  //   });
+  // }
+  // else if ($(window).scrollTop() > navbarTransparencyHeight && navbarTransparency == true &&
+  // animatingNavbar == false){
+  //   navbarTransparency = false;
+ // 	  animatingNavbar = true;
+  // 	$("#nav_bar").stop().animate({backgroundColor:  "rgba(47, 79, 79, 0.7)"}, 400, function() {
+  // 		animatingNavbar = false;
+  // 	});
+ // 	}
 
   //Link border bottom loop
   //from bottom to top
   if($(this).scrollTop() >= $("#hobbies").position().top - linkTopOffset){
-    $("#nav_bar li").css("border-bottom", "none");
+    $("#nav_bar li").css("border-bottom", "2px solid transparent");
     if($(window).scrollTop() + $(window).height() == $(document).height()) {
       $("#connect_link").css("border-bottom", linkBorderBottom);
     }
@@ -179,15 +187,15 @@ $(window).scroll(function(){
     }
   }
   else if($(this).scrollTop() >= $("#experience").position().top - linkTopOffset){
-    $("#nav_bar li").css("border-bottom", "none");
+    $("#nav_bar li").css("border-bottom", "2px solid transparent");
     $("#experience_link").css("border-bottom", linkBorderBottom);
   }
   else if($(this).scrollTop() >= $("#about").position().top - linkTopOffset){
-    $("#nav_bar li").css("border-bottom", "none");
+    $("#nav_bar li").css("border-bottom", "2px solid transparent");
     $("#about_link").css("border-bottom", linkBorderBottom);
   }
   else if($(this).scrollTop() >= $("#home").position().top - linkTopOffset){
-    $("#nav_bar li").css("border-bottom", "none");
+    $("#nav_bar li").css("border-bottom", "2px solid transparent");
     $("#home_link").css("border-bottom", linkBorderBottom);
   }
 });

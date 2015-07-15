@@ -2,8 +2,14 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   font-family: 'Raleway', sans-serif;
+}
+
+@font-face{
+  font-family: Museo;
+  /*font-weight: bold;*/
+  src:url("../fonts/MuseoSans_500.otf") format("opentype");
 }
 
 /*GENERAL*/
@@ -71,7 +77,7 @@ h2{
 
 #nav_bar ul{
   height: 100%;
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
@@ -88,23 +94,14 @@ h2{
   display: inline-block;
   /*height: 100%;*/
   line-height: 50px;
-  font-size: 17px;
+  font-size: 16px;
   text-decoration: none;
-  color: gray;
+  color: white;
   background-color: transparent;
   cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
 }
-
-#nav_bar ul li:hover {
-  color: #fff;
-  background-color: #369;
-}
-
-/*#home_button{
-  height: 46px;
-  border-bottom: 4px solid #736AFF;
-  border-bottom-color: #990012;
-}*/
 
 /*HOME*/
 #home{
@@ -112,20 +109,28 @@ h2{
   height: 100vh;
   min-height: 500px;
   text-align: center;
-  padding-top: 150px;
   background-color: white;
+  background-image: url("../images/home_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#overlay{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgba(74, 112, 139, 0.7);
 }
 
 #name{
-  font-size: 75px;
-}
-
-#class{
-  font-size: 30px;
-}
-
-#term{
-  color: #990012;
+  position: relative;
+  font-family: Museo, sans-serif;
+  font-size: 70px;
+  color: white;
+  line-height: 100vh;
+  bottom: 70px;
+  font-weight: lighter;
 }
 
 /*ABOUT*/
@@ -563,21 +568,4 @@ input{
   text-align: center;
   line-height: 100px;
   color: gray;
-}
-
-#icons{
-  display: inline-block;
-  height: 100%;
-  width: 60%;
-  float: right;
-  text-align: right;
-  padding-top: 20px;
-  padding-right: 50px;
-}
-
-.bottom_icons{
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin-top: 8px;
 }
