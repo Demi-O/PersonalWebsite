@@ -2,13 +2,12 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  /*padding-top: 50px;*/
   font-family: 'Raleway', sans-serif;
 }
 
 @font-face{
   font-family: Museo;
-  /*font-weight: bold;*/
+  font-weight: bold;
   src:url("../fonts/MuseoSans_500.otf") format("opentype");
 }
 
@@ -23,11 +22,11 @@ body{
 }
 
 #experience_big_div{
-  background-color: #E8E8E8;
+  background-color: #F7F7F7;
 }
 
 #contact_big_div{
-  background-color: #E8E8E8;
+  background-color: #F2F2F2;
 }
 
 .small_div{
@@ -35,16 +34,17 @@ body{
   text-align: center;
   width: 90%;
   background-color: white;
-  color: black;
+  color: #565B5B;
+  background-color: transparent;
 }
 
 .glyphicon{
   position: relative;
-  line-height: -4px;
+  /*line-height: -4px;*/
   font-size: 30px;
   margin-left: 2%;
   margin-right: 2%;
-  color: #990012;
+  color: #2582A1;
 }
 
 hr{
@@ -57,11 +57,11 @@ hr{
   width: 44%;
 }
 
-.div_header{
-}
-
 h2{
+  color: #333434;
   font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 /*NAVIGATION BAR*/
@@ -72,7 +72,7 @@ h2{
   width: 100%;
   height: 50px;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(47, 79, 79, 0.7);
 }
 
 #nav_bar ul{
@@ -88,6 +88,7 @@ h2{
   display: inline-block;
   height: 100%;
   width: 18%;
+  cursor: pointer;
 }
 
 #nav_bar ul li a {
@@ -98,7 +99,6 @@ h2{
   text-decoration: none;
   color: white;
   background-color: transparent;
-  cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
 }
@@ -118,6 +118,7 @@ h2{
 #overlay{
   position: absolute;
   height: 100vh;
+  min-height: 500px;
   width: 100%;
   top: 0;
   background-color: rgba(74, 112, 139, 0.7);
@@ -126,9 +127,11 @@ h2{
 #name{
   position: relative;
   font-family: Museo, sans-serif;
-  font-size: 70px;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-size: 80px;
   color: white;
-  line-height: 100vh;
+  margin-top: 275px;
+  /*line-height: 100vh;*/
   bottom: 70px;
   font-weight: lighter;
 }
@@ -146,29 +149,30 @@ h2{
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
   border-radius: 150px;
+  border: 3px solid #2582A1;
   background: url("../images/Afrofest_2015.jpg") no-repeat;
   float: left;
   margin-left: 50px;
 }
 
 #about_description{
-  width: 60%;
+  width: 65%;
   display: inline-block;
   word-wrap: normal;
-  font-size: 19px;
-  padding-top: 10px;
+  text-align: left;
+  font-size: 18px;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
 
 /*EXPERIENCE*/
-#experience{
-  background-color: #E8E8E8;
-}
-
 .exp_year{
   width: 100%;
   text-align: center;
   font-size: 30px;
   margin-top: 25px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .exp_div{
@@ -311,13 +315,14 @@ h2{
 }
 
 .exp_full_title{
-    margin-top:0;
-    color:#808080;
-    color: #990012;
-    font-weight:bold;
-    border-bottom:1px solid #707070;
-    padding-bottom:5px;
-    margin-bottom:5px
+  margin-top:0;
+  color:#808080;
+  color: #6F829C;
+  border-bottom:1px solid #707070;
+  padding-bottom:5px;
+  margin-bottom:5px;
+  /*font-family: Museo, sans-serif;*/
+  font-weight:bold;
 }
 
 .glyphicon.ignore{
@@ -332,6 +337,7 @@ h2{
 .exp_full_p{
   padding: 0;
   margin: 3px;
+  /*font-family: 'Josefin Sans', sans-serif;*/
 }
 
 small{
@@ -349,6 +355,7 @@ small{
   border: 1px solid gray;
   text-align: left;
   padding: 10px 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .experience_details{
@@ -358,17 +365,13 @@ small{
 
 .lang_and_soft_used{
   display: inline-block;
-  width: 17%;
+  width: 18%;
   float: right;
-  padding-left: 15px;
+  padding-left: 13px;
   border-left: 1px solid gray;
 }
 
 /*HOBBIES*/
-#hobbies{
-  background-color: white;
-}
-
 .hobbies_div{
   display: inline-block;
   margin: 20px;
@@ -395,6 +398,7 @@ small{
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
+  border: 5px solid silver;
 	background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -430,9 +434,9 @@ small{
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 24px;
+	font-size: 23px;
 	padding: 50px 0 0 0;
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: "Montserrat", sans-serif;
 	text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
 }
 
@@ -461,10 +465,6 @@ small{
 
 
 /*CONNECT*/
-#connect{
-  background-color: #E8E8E8;
-}
-
 .connect_div{
   display: inline-block;
   position: relative;
@@ -558,14 +558,17 @@ input{
   height: auto;
   background-color: #2B2B2B;
   background-color: black;
+  background-color: #212A2C;
 }
 
 #created{
   display: inline-block;
   height: 150px;
-  width: 40%;
+  width: 70%;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  margin-left: 50px;
   line-height: 100px;
   color: gray;
+  color: #BDC3C7;
 }
