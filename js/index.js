@@ -37,9 +37,13 @@ window.addEventListener("load", function(){
 
   $("#nav_bar li").hover(
     function() {
-      $(this).children("a").css("font-size", "20px");
+      if ( $(window).width() > 760) {
+        $(this).children("a").css("font-size", "20px");
+      }
     }, function() {
+      if ( $(window).width() > 760){
         $( this ).children("a").css("font-size", "17px");
+      }
     }
   );
 
