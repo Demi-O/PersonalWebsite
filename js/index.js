@@ -47,6 +47,11 @@ window.addEventListener("load", function(){
     }
   );
 
+  //HOME
+  $(".glyphicon.home").click(function(){
+      $("html,body").animate({scrollTop: $("#about").offset().top - 80}, 1100);
+  });
+
   //EXPERIENCE
   $(".exp_full").hide();
   //div drops
@@ -103,16 +108,7 @@ window.addEventListener("load", function(){
   //clicks
   $(".connect_div").click(function(){
     var id = this.id;
-    if(id == "linkedin_connect"){
-      window.location.href = "https://ca.linkedin.com/pub/demi-olagoke/47/257/583";
-    }
-    else if(id == "github_connect"){
-      window.location.href = "https://github.com/Demi-O";
-    }
-    else if(id == "instagram_connect"){
-      window.location.href = "https://instagram.com/demiolagoke/";
-    }
-    else if(id == "message_connect"){
+    if(id == "message_connect"){
       $("#contact_form").slideToggle();
       if($("#contact_form").is(":visible")) {
         $("html,body").animate({scrollTop: $("#message_connect").offset().top + 50}, 400);
@@ -184,7 +180,7 @@ $(window).scroll(function(){
   }
   else if($(this).scrollTop() >= $("#home").position().top - linkTopOffset){
     $("#nav_bar li").css("border-bottom", "2px solid transparent");
-    $("#home_link").css("border-bottom", linkBorderBottom);
+    $("#home_link").css("border-bottom", "2px solid white");
   }
 });
 
