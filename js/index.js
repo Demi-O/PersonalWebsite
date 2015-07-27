@@ -49,8 +49,10 @@ window.addEventListener("load", function(){
 
   //HOME
   $(".glyphicon.home").click(function(){
-      $("html,body").animate({scrollTop: $("#about").offset().top - 80}, 1100);
+    $("html,body").animate({scrollTop: $("#about").offset().top - 80}, 1100);
   });
+
+  $("#home").fadeTo(800, 1);
 
   //EXPERIENCE
   $(".exp_full").hide();

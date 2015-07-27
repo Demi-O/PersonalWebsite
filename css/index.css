@@ -113,6 +113,7 @@ h2{
   background-image: url("../images/home_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.1;
 }
 
 #overlay{
@@ -136,7 +137,7 @@ h2{
   font-weight: lighter;
 }
 
-#home_p{
+#down_arrow{
   height: 100px;
   margin-bottom: 20%;
 }
@@ -437,11 +438,11 @@ small{
 }
 
 #developing_img{
-  background-image: url("../images/developing.jpg");
+  background-image: url("../images/dev.jpg");
 }
 
 #dancing_img{
-  background-image: url("../images/dancing1.jpg");
+  background-image: url("../images/dancing.jpg");
 }
 
 #drawing_img{
