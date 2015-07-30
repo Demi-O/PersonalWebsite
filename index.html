@@ -10,18 +10,6 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery-ui-effect.min.js"></script>
-    <!-- !!!!!!!!!!!!CONTACT!!!!!!!!!!!!!!!!! -->
-    <script>
-      $(document).ready(function(){
-        $('#submit').click(function(){
-          $.post("../php/contactFormHamdler.php", $("#contact_form").serialize(),  function(response) {
-          $('#success').html(response);
-          //$('#success').hide('slow');
-          });
-          return false;
-        });
-      });
-    </script>
 </head>
 <body>
   <div id="nav_bar">
@@ -105,7 +93,7 @@
           </div>
         </div>
         <div class="exp_description">
-          Undergradaute Research Assistant
+          Undergraduate Research Assistant
           <br>
           4 months
         </div>
@@ -174,7 +162,7 @@
               I decided to make a personal website because I needed a way to present myself to the world, I wanted to have a place where anyone from anywhere could go and learn about me whenever they wanted to.
               <ul>
                 <li>Programmed the entire website while getting valuable suggestions and feedback from friends.</li>
-                <li>Took the jQuery course on codeacademy in order to learn jQuery, whuch I used to make the website interactive.</li>
+                <li>Took the jQuery course on codeacademy in order to learn jQuery, which I used to make the website interactive.</li>
               </ul>
             </div>
             <div class="lang_and_soft_used">
@@ -212,7 +200,7 @@
           </div>
           <div class="exp_full_bottom">
             <div class="experience_details">
-              Developed an application that was used for research into data exploration techniques of geotagged information on a tabletop software. I worked with another coop student to complete this, the application involves two way communication between a tabletop and a number of tablets.
+              Developed an application that was used for research into data exploration techniques of geotagged information on a tabletop device. I worked with another coop student to complete this, the application involves two way communication between a tabletop and a number of tablets.
               <ul>
                 <li>Faciliated the addition of items to the startup screen and map of the table by reading information from csv files.</li>
                 <li>Added functions to the server and the webpages behind the table and tablet applications to send information across the devices.</li>
@@ -288,11 +276,11 @@
           </div>
           <div class="exp_full_bottom">
             <div class="experience_details">
-              My job at Mabel's Labels was to create a font calibration program, I finished this in two months and picked up on other development jobs along with the other full-time developers. This was my first time using C#.
+              My job at Mabel's Labels was to create a font calibration program, I finished this in two months and picked up other development duties with the other full-time developers. This was my first time using C#.
               <ul>
                 <li>Made a windows forms application used to measure the height and depth of each character of a given font given the font file.</li>
                 <li>The font calibration program writes these values to a MySQL database, it also reads these values from the database to make adjusting of the values easier.</li>
-                <li>Communicated with people in other departments to fix service tickets.</li>
+                <li>Communicated with fellow employees in other departments to fix service tickets.</li>
                 <li>Adjusted data and stored procedures on a MySQL database as needed.</li>
                 <li>I was appointed scrum master on a few occasions.</li>
               </ul>
@@ -529,24 +517,14 @@
       <div class="connect_div" id="message_connect" title="Send me an email"> </div>
 
       <div id="contact_form">
-        <form method="post" name="contact_form" action="">
-          <span class="contact_field">Name</span><span class="asterisk">*</span><br>
-          <input type="text" name="name" placeholder="Name" required="required"/>
+        <form method="post" name="message_form" action="php-bin/contactFormHandler.php">
+          <span class="contact_field">E-mail</span><br>
+          <input type="text" id="email" placeholder="E-Mail Address" required="required">
           <br><br>
-
-          <span class="contact_field">E-mail</span><span class="asterisk">*</span><br>
-          <input type="text" name="email" placeholder="E-Mail Address" required="required">
-          <br><br>
-
-          <span class="contact_field">Phone Number</span><br>
-          <input type="text" name="phone_number" placeholder="Phone Number"/>
-          <br><br>
-
-          <span class="contact_field">Message<span><span class="asterisk">*</span><br>
+          <span class="contact_field">Message<span><br>
           <textarea id="message_box" name="message" rows="8" placeholder="Message"></textarea>
           <br><br>
-
-          <input type="submit" id="send_message_link" value="Send Message"/>
+          <input type="submit" id="send_message_button" value="Send Message"/>
         </form>
       </div>
     </div>

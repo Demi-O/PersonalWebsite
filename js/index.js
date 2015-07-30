@@ -6,32 +6,33 @@ var navbarTransparency = false;
 var animatingNavbar = false;
 var linkBorderBottom = "2px solid white";
 var linkTopOffset = 100;
+var scrollDuration = 850;
 
 window.addEventListener("load", function(){
   //NAV BAR
   if ($(window).scrollTop() <= navbarTransparencyHeight){
-    $("#nav_bar").css("background-color", "rgba(47, 79, 79, 0)");
+    $("#nav_bar").css("background-color", "rgba(33,42,44, 0)");
   }
   else{
-    $("#nav_bar").css("background-color", "rgba(47, 79, 79, 0.7)");
+    $("#nav_bar").css("background-color", "rgba(33,42,44, 0.8)");
   }
 
   $("#nav_bar li").click(function(){
     var id = this.id;
     if(id == "home_link"){
-      $("html,body").animate({scrollTop: $("#home").offset().top - 80}, 1100);
+      $("html,body").animate({scrollTop: $("#home").offset().top - 80}, scrollDuration);
     }
     else if(id == "about_link"){
-      $("html,body").animate({scrollTop: $("#about").offset().top - 80}, 1100);
+      $("html,body").animate({scrollTop: $("#about").offset().top - 80}, scrollDuration);
     }
     else if(id == "experience_link"){
-      $("html,body").animate({scrollTop: $("#experience").offset().top - 80}, 1100);
+      $("html,body").animate({scrollTop: $("#experience").offset().top - 80}, scrollDuration);
     }
     else if(id == "hobbies_link"){
-      $("html,body").animate({scrollTop: $("#hobbies").offset().top - 80}, 1100);
+      $("html,body").animate({scrollTop: $("#hobbies").offset().top - 80}, scrollDuration);
     }
     else if(id == "connect_link"){
-      $("html,body").animate({scrollTop: $("#connect").offset().top - 80}, 1100);
+      $("html,body").animate({scrollTop: $("#connect").offset().top - 80}, scrollDuration);
     }
   });
 
@@ -49,7 +50,7 @@ window.addEventListener("load", function(){
 
   //HOME
   $(".glyphicon.home").click(function(){
-    $("html,body").animate({scrollTop: $("#about").offset().top - 80}, 1100);
+    $("html,body").animate({scrollTop: $("#about").offset().top - 80}, scrollDuration);
   });
 
   $("#home").fadeTo(800, 1);
@@ -61,31 +62,31 @@ window.addEventListener("load", function(){
     //experience drops
     var id = this.id;
     if(id == "snake_image"){
-      $(".exp_full").not("#exp_full_snake").slideUp();
+      $(".exp_full").not("#exp_full_snake").hide();
       $("#exp_full_snake").slideToggle();
     }
     else if(id == "pWebsite_image"){
-      $(".exp_full").not("#exp_full_pWebsite").slideUp();
+      $(".exp_full").not("#exp_full_pWebsite").hide();
       $("#exp_full_pWebsite").slideToggle();
     }
     else if(id == "URA_image"){
-      $(".exp_full").not("#exp_full_URA").slideUp();
+      $(".exp_full").not("#exp_full_URA").hide();
       $("#exp_full_URA").slideToggle();
     }
     else if(id == "mabels_image"){
-      $(".exp_full").not("#exp_full_mabels").slideUp();
+      $(".exp_full").not("#exp_full_mabels").hide();
       $("#exp_full_mabels").slideToggle();
     }
     else if(id == "blackberry_image"){
-      $(".exp_full").not("#exp_full_blackberry").slideUp();
+      $(".exp_full").not("#exp_full_blackberry").hide();
       $("#exp_full_blackberry").slideToggle();
     }
     else if(id == "tictac_image"){
-      $(".exp_full").not("#exp_full_tictac").slideUp();
+      $(".exp_full").not("#exp_full_tictac").hide();
       $("#exp_full_tictac").slideToggle();
     }
     else if(id == "fortune_image"){
-      $(".exp_full").not("#exp_full_fortune").slideUp();
+      $(".exp_full").not("#exp_full_fortune").hide();
       $("#exp_full_fortune").slideToggle();
     }
 
@@ -129,15 +130,10 @@ window.addEventListener("load", function(){
       $(this).stop().animate({"bottom":"0px"}, 400);
   });
 
-  var formValidator = new Validator("contact_form");
-  //Name
-  formValidator.addValidation("name", "req", "Please provide your name");
-  formValidator.addValidation("name", "maxlen=40", "Max lenght for Name is 40 characters");
+  var formValidator = new Validator("message_form");
   //Email
   formValidator.addValidation("email", "req", "Please provide your email address");
   formValidator.addValidation("email", "email", "Please enter a valid email address");
-  //Phone Number
-  formValidator.addValidation("phone_number", "num", "Please enter only numbers in Number");
   //Message
   formValidator.addValidation("message","req", "Please enter a message");
   formValidator.addValidation("message", "maxlen=400", "Max length for a message is 400 characters");
@@ -148,7 +144,7 @@ $(window).scroll(function(){
   animatingNavbar == false) {
     navbarTransparency = true;
     animatingNavbar = true;
-    $("#nav_bar").stop().animate({backgroundColor:  "rgba(47, 79, 79, 0)"}, 350, function() {
+    $("#nav_bar").stop().animate({backgroundColor:  "rgba(33,42,44, 0)"}, 350, function() {
     	animatingNavbar = false;
     });
   }
@@ -156,7 +152,7 @@ $(window).scroll(function(){
   animatingNavbar == false){
     navbarTransparency = false;
  	  animatingNavbar = true;
-  	$("#nav_bar").stop().animate({backgroundColor:  "rgba(47, 79, 79, 0.7)"}, 300, function() {
+    $("#nav_bar").stop().animate({backgroundColor:  "rgba(33,42,44, 0.8)"}, 300, function() {
   		animatingNavbar = false;
   	});
  	}
