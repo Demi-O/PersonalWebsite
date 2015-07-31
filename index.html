@@ -508,6 +508,14 @@
         <h2>Connect</h2>
       </div>
 
+      <div class="feedback" id="success">
+        Your message has been received, I will get back to you as soon as I can.
+      </div>
+
+      <div class="feedback" id="failure">
+        Your message failed to deliver, please try again later.
+      </div>
+
       <a href="https://ca.linkedin.com/pub/demi-olagoke/47/257/583"><div class="connect_div" id="linkedin_connect" title="Add me on LinkedIn"> </div></a>
 
       <a href="https://github.com/Demi-O"><div class="connect_div" id="github_connect" title="Follow me on GitHub"> </div></a>
@@ -517,9 +525,9 @@
       <div class="connect_div" id="message_connect" title="Send me an email"> </div>
 
       <div id="contact_form">
-        <form method="post" name="message_form" action="php-bin/contactFormHandler.php">
+        <form method="post" id="message_form">
           <span class="contact_field">E-mail</span><br>
-          <input type="text" id="email" placeholder="E-Mail Address" required="required">
+          <input type="text" id="email" placeholder="Your E-Mail Address" required="required">
           <br><br>
           <span class="contact_field">Message<span><br>
           <textarea id="message_box" name="message" rows="8" placeholder="Message"></textarea>
@@ -529,6 +537,11 @@
       </div>
     </div>
   </div>
+  <!-- <div class="popup_container">
+    <div id="success">
+      Your message has been received, I will get back to you as soon as I can.
+    </div>
+  </div> -->
 
   <div id="end">
     <div id="created">

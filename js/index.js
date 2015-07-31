@@ -121,7 +121,7 @@ window.addEventListener("load", function(){
       }
     }
   });
-  //animations
+
   $(".connect_div").hover(
     function(){
       $(this).stop().animate({"bottom":"20px"}, 500);
@@ -137,6 +137,28 @@ window.addEventListener("load", function(){
   //Message
   formValidator.addValidation("message","req", "Please enter a message");
   formValidator.addValidation("message", "maxlen=400", "Max length for a message is 400 characters");
+
+  $("#message_form").submit(function(event){
+    event.preventDefault();
+    $.ajax({
+      url: '../php-bin/contactFormHandler.php',
+      data: {action: "mail", email: $("#email").val(), message: $("#message_box").val()},
+      type: "post",
+      success: function(){
+        $("#success").slideDown();
+        setTimeout(function(){$("#success").slideUp();}, 5500);
+        $("html,body").animate({scrollTop: $("#connect").offset().top - 80}, 400);
+        $("#contact_form").slideUp();
+        $("#email").val("");
+        $("#message_box").val("");
+      },
+      error: function(){
+        $("#failure").slideDown();
+        setTimeout(function(){$("#failure").slideUp();}, 5500);
+        $("html,body").animate({scrollTop: $("#connect").offset().top - 80}, 400);
+      }
+    });
+  });
 });
 
 $(window).scroll(function(){

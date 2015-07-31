@@ -63,6 +63,19 @@ h2{
   font-weight: 400;
 }
 
+.feedback{
+  width: 70%;
+  margin: 0 auto;
+  background-color: #4CC417;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+  border-radius: 5px;
+  display: none;
+}
+
 /*NAVIGATION BAR*/
 #nav_bar{
   position:fixed;
@@ -494,6 +507,14 @@ small{
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+}
+
+#success{
+  background-color: #4CC417;
+}
+
+#failure{
+  background-color: #F70D1A;
 }
 
 #linkedin_connect{
