@@ -139,11 +139,9 @@ h2{
 #name{
   position: relative;
   font-family: Museo, sans-serif;
-  /*font-family: 'Raleway', sans-serif;*/
   font-size: 80px;
   color: white;
   margin-top: 275px;
-  /*line-height: 100vh;*/
   bottom: 70px;
   font-weight: lighter;
 }
