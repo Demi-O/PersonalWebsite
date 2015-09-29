@@ -73,6 +73,10 @@ window.addEventListener("load", function(){
       $(".exp_full").not("#exp_full_URA").hide();
       $("#exp_full_URA").slideToggle();
     }
+    else if(id == "tilde_image"){
+      $(".exp_full").not("#exp_full_tilde").hide();
+      $("#exp_full_tilde").slideToggle();
+    }
     else if(id == "mabels_image"){
       $(".exp_full").not("#exp_full_mabels").hide();
       $("#exp_full_mabels").slideToggle();

@@ -244,6 +244,14 @@ h2{
   background-size: cover;
 }
 
+#tilde_image{
+  background-color: transparent;
+  background-image: url("../images/tilde_logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 120% 120%;
+}
+
 #mabels_image{
   background-image: url("../images/mabels_labels.png");
   background-position: right center;
