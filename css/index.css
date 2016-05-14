@@ -223,6 +223,13 @@ h2{
   border: 1px solid silver;
 }
 
+#nanopay_logo{
+  background-image: url("../images/nanopay_logo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 95% 38%;
+}
+
 #snake_image{
   background-image: url("../images/unity_logo.png");
   background-position: 45% 0%;
@@ -396,15 +403,8 @@ small{
 
 .experience_details{
   display: inline-block;
-  width: 80%;
-}
-
-.lang_and_soft_used{
-  display: inline-block;
-  width: 18%;
-  float: right;
-  padding-left: 13px;
-  border-left: 1px solid gray;
+  width: 100%;
+  font-size: 15px;
 }
 
 /*HOBBIES*/

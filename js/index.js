@@ -61,7 +61,11 @@ window.addEventListener("load", function(){
   $(".exp_img").click(function(){
     //experience drops
     var id = this.id;
-    if(id == "snake_image"){
+    if(id == "nanopay_logo"){
+      $(".exp_full").not("#exp_full_nanopay").hide();
+      $("#exp_full_nanopay").slideToggle();
+    }
+    else if(id == "snake_image"){
       $(".exp_full").not("#exp_full_snake").hide();
       $("#exp_full_snake").slideToggle();
     }
