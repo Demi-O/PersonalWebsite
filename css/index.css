@@ -76,6 +76,17 @@ h2{
   display: none;
 }
 
+/*LOADING DIV*/
+#loading {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: url('../images/loading.gif') 50% 50% / 5% 5% no-repeat rgb(255,255,255);
+}
+
 /*NAVIGATION BAR*/
 #nav_bar{
   position:fixed;

@@ -9,6 +9,10 @@ var linkTopOffset = 100;
 var scrollDuration = 850;
 
 window.addEventListener("load", function(){
+
+  //LOADING
+  $("#loading").fadeOut("slow");
+  
   //NAV BAR
   if ($(window).scrollTop() <= navbarTransparencyHeight){
     $("#nav_bar").css("background-color", "rgba(33,42,44, 0)");
