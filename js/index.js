@@ -214,6 +214,6 @@ $(window).scroll(function(){
 
 var changePictures = function(){
   picNumber++;
-  $("#drawing_img").css("background-image", "url(images/drawing" + picNumber % 2 + ".jpg)");
+  $("#drawing_img").css("background-image", "url(images/drawing" + picNumber % 3 + ".jpg)");
   //dancing_img.src = "images/dancing" + picNumber % 2 + ".jpg";
 }
