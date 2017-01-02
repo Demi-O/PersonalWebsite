@@ -65,9 +65,13 @@ window.addEventListener("load", function(){
   $(".exp_img").click(function(){
     //experience drops
     var id = this.id;
-    if(id == "nanopay_logo"){
+    if(id == "nanopay_image"){
       $(".exp_full").not("#exp_full_nanopay").hide();
       $("#exp_full_nanopay").slideToggle();
+    }
+    else if(id == "minted_image"){
+      $(".exp_full").not("#exp_full_minted").hide();
+      $("#exp_full_minted").slideToggle();
     }
     else if(id == "snake_image"){
       $(".exp_full").not("#exp_full_snake").hide();
@@ -219,5 +223,4 @@ $(window).scroll(function(){
 var changePictures = function(){
   picNumber++;
   $("#drawing_img").css("background-image", "url(images/drawing" + picNumber % 3 + ".jpg)");
-  //dancing_img.src = "images/dancing" + picNumber % 2 + ".jpg";
 }

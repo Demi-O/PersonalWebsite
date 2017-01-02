@@ -1,18 +1,18 @@
-body{
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-@font-face{
+@font-face {
   font-family: Museo;
   font-weight: bold;
   src:url("../fonts/MuseoSans_500.otf") format("opentype");
 }
 
 /*GENERAL*/
-.big_div{
+.big_div {
   width: 100%;
   background-color: white;
   color: black;
@@ -21,15 +21,15 @@ body{
   border-bottom: 1px solid silver;
 }
 
-#experience_big_div{
+#experience_big_div {
   background-color: #F7F7F7;
 }
 
-#contact_big_div{
+#contact_big_div {
   background-color: #F2F2F2;
 }
 
-.small_div{
+.small_div {
   margin: 0 auto;
   text-align: center;
   width: 90%;
@@ -38,7 +38,7 @@ body{
   background-color: transparent;
 }
 
-.glyphicon{
+.glyphicon {
   position: relative;
   font-size: 30px;
   margin-left: 2%;
@@ -46,7 +46,7 @@ body{
   color: #2582A1;
 }
 
-hr{
+hr {
   height: 2px;
   border: none;
   margin: 0;
@@ -56,14 +56,14 @@ hr{
   width: 44%;
 }
 
-h2{
+h2 {
   color: #333434;
   font-size: 35px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
-.feedback{
+.feedback {
   width: 70%;
   margin: 0 auto;
   background-color: #4CC417;
@@ -88,7 +88,7 @@ h2{
 }
 
 /*NAVIGATION BAR*/
-#nav_bar{
+#nav_bar {
   position:fixed;
   top:0;
   left: 0;
@@ -98,7 +98,7 @@ h2{
   background-color: rgba(33,42,44, 0.85);
 }
 
-#nav_bar ul{
+#nav_bar ul {
   height: 100%;
   width: 50%;
   margin: 0 auto;
@@ -126,7 +126,7 @@ h2{
 }
 
 /*HOME*/
-#home{
+#home {
   width: 100%;
   height: 100vh;
   min-height: 500px;
@@ -138,7 +138,7 @@ h2{
   opacity: 0.1;
 }
 
-#overlay{
+#overlay {
   position: absolute;
   height: 100vh;
   min-height: 500px;
@@ -147,7 +147,7 @@ h2{
   background-color: rgba(74, 112, 139, 0.7);
 }
 
-#name{
+#name {
   position: relative;
   font-family: Museo, sans-serif;
   font-size: 80px;
@@ -157,12 +157,12 @@ h2{
   font-weight: lighter;
 }
 
-#down_arrow{
+#down_arrow {
   height: 100px;
   margin-bottom: 20%;
 }
 
-.glyphicon.home{
+.glyphicon.home {
   position: default;
   font-size: 50px;
   color: white;
@@ -170,17 +170,17 @@ h2{
   line-height: 100px;
 }
 
-.glyphicon.home:hover{
+.glyphicon.home:hover {
   font-size: 60px;
 }
 
 /*ABOUT*/
-#about{
+#about {
   padding-bottom: 20px;
   overflow: hidden;
 }
 
-#about_img{
+#about_img {
   display: inline-block;
   width: 300px;
   height: 300px;
@@ -193,7 +193,7 @@ h2{
   margin-left: 50px;
 }
 
-#about_description{
+#about_description {
   width: 65%;
   display: inline-block;
   word-wrap: normal;
@@ -205,7 +205,7 @@ h2{
 }
 
 /*EXPERIENCE*/
-.exp_year{
+.exp_year {
   width: 100%;
   text-align: center;
   font-size: 30px;
@@ -213,7 +213,7 @@ h2{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.exp_div{
+.exp_div {
   display: inline-block;
   text-align: center;
   margin: 20px;
@@ -221,7 +221,7 @@ h2{
   height: 250px;
 }
 
-.exp_img{
+.exp_img {
   width: 100%;
   height: 75%;
   -webkit-border-radius: 15px 15px 0px 0px;
@@ -234,35 +234,42 @@ h2{
   border: 1px solid silver;
 }
 
-#nanopay_logo{
+#minted_image {
+  background-image: url("../images/minted_logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+}
+
+#nanopay_image {
   background-image: url("../images/nanopay_logo.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 95% 38%;
 }
 
-#snake_image{
+#snake_image {
   background-image: url("../images/unity_logo.png");
   background-position: 45% 0%;
   background-repeat: no-repeat;
   background-size: 83% 120%;
 }
 
-#pWebsite_image{
+#pWebsite_image {
   background-image: url("../images/web_dev.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-#URA_image{
+#URA_image {
   background-image: url("../images/uwaterloologo.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#tilde_image{
+#tilde_image {
   background-color: transparent;
   background-image: url("../images/tilde_logo.png");
   background-position: center center;
@@ -270,28 +277,28 @@ h2{
   background-size: 120% 120%;
 }
 
-#mabels_image{
+#mabels_image {
   background-image: url("../images/mabels_labels.png");
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 95% 100%;
 }
 
-#blackberry_image{
+#blackberry_image {
   background-image: url("../images/blackberry_logo.png");
   background-position: center 15%;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-#tictac_image{
+#tictac_image {
   background-image: url("../images/android_logo.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#fortune_image{
+#fortune_image {
   background-image: url("../images/android_logo.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -339,7 +346,7 @@ h2{
 	transform: scale(1);
 }
 
-.exp_description{
+.exp_description {
   width: 100%;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
@@ -351,7 +358,7 @@ h2{
   border-radius: 0px 0px 15px 15px;
 }
 
-.exp_full{
+.exp_full {
   display: block;
   width: 850px;
   min-height: 0px;
@@ -359,7 +366,7 @@ h2{
   margin: 0 auto;
 }
 
-.exp_full_top{
+.exp_full_top {
   width: 100%;
   height: 100px;
   background-color: #2C3539;
@@ -370,7 +377,7 @@ h2{
   text-align: left;
 }
 
-.exp_full_title{
+.exp_full_title {
   margin-top:0;
   color: #6F829C;
   border-bottom:1px solid #707070;
@@ -380,7 +387,7 @@ h2{
   font-weight: bold;
 }
 
-.glyphicon.ignore{
+.glyphicon.ignore {
   position: default;
   line-height: 0px;
   font-size: inherit;
@@ -389,17 +396,17 @@ h2{
   color: gray;
 }
 
-.exp_full_p{
+.exp_full_p {
   padding: 0;
   margin: 3px;
 }
 
-small{
+small {
   color: gray;
   font-size: 14px;
 }
 
-.exp_full_bottom{
+.exp_full_bottom {
   width: 100%;
   min-height: 200px;
   background-color: white;
@@ -412,14 +419,14 @@ small{
   font-family: 'Montserrat', sans-serif;
 }
 
-.experience_details{
+.experience_details {
   display: inline-block;
   width: 100%;
   font-size: 15px;
 }
 
 /*HOBBIES*/
-.hobbies_div{
+.hobbies_div {
   display: inline-block;
   margin: 20px;
   width: 250px;
@@ -430,7 +437,7 @@ small{
   perspective: 900px;
 }
 
-.hobbies_info{
+.hobbies_info {
   position: absolute;
 	width: 100%;
 	height: 100%;
@@ -460,19 +467,19 @@ small{
 	opacity: 0;
 }
 
-#soccer_img{
+#soccer_img {
   background-image: url("../images/soccer.jpg");
 }
 
-#developing_img{
+#developing_img {
   background-image: url("../images/dev.jpg");
 }
 
-#dancing_img{
+#dancing_img {
   background-image: url("../images/dancing.jpg");
 }
 
-#drawing_img{
+#drawing_img {
   background-image: url("../images/drawing0.jpg");
 }
 
@@ -511,7 +518,7 @@ small{
 
 
 /*CONNECT*/
-.connect_div{
+.connect_div {
   display: inline-block;
   position: relative;
   margin: 30px;
@@ -526,46 +533,46 @@ small{
   cursor: pointer;
 }
 
-#success{
+#success {
   background-color: #4CC417;
 }
 
-#failure{
+#failure {
   background-color: #F70D1A;
 }
 
-#linkedin_connect{
+#linkedin_connect {
   background-image: url("../images/linkedin_icon.png");
   background-size: 65% 65%;
   background-color: #007BB6;
 }
 
-#github_connect{
+#github_connect {
   background-image: url("../images/github_icon.png");
   background-size: 75% 75%;
   background-color: #2B2B2B;
 }
 
-#instagram_connect{
+#instagram_connect {
   background-image: url("../images/instagram_icon.png");
   background-size: 60% 60%;
   background-color: #517FA4;
 }
 
-#message_connect{
+#message_connect {
   background-image: url("../images/envelope.png");
   background-size: 85% 50%;
   background-color: #AAD450;
 }
 
-.glyphicon.connect{
+.glyphicon.connect {
   line-height: 150px;
   margin: 0;
   color: white;
   font-size: 100px;
 }
 
-#contact_form{
+#contact_form {
   width: 60%;
   height: 90%;
   margin: 0 auto;
@@ -577,11 +584,11 @@ small{
   border: 2px solid #463E3F;
 }
 
-.contact_field{
+.contact_field {
   font-weight: bold;
 }
 
-input{
+input {
   width: 80%;
   background-color: #E8E8E8;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -589,7 +596,7 @@ input{
   border-radius: 5px 5px 5px 5px;
 }
 
-#message_box{
+#message_box {
   width: 80%;
   height: 150px;
   background-color: #E8E8E8;
@@ -599,18 +606,18 @@ input{
   border-radius: 5px 5px 5px 5px;
 }
 
-#send_message_button{
+#send_message_button {
   width: 35%;
 }
 
 /*END*/
-#end{
+#end {
   width: 100%;
   height: auto;
   background-color: #212A2C;
 }
 
-#created{
+#created {
   display: inline-block;
   height: 150px;
   width: 70%;
@@ -624,12 +631,12 @@ input{
 
 /*DIFFERENT SCREENS*/
 @media only screen and (max-width: 1024px) {
-  #about_img{
+  #about_img {
     display: block;
     margin-right: 30px;
   }
 
-  #about_description{
+  #about_description {
     width: 83%;
     display: block;
     text-align: center;
@@ -637,24 +644,24 @@ input{
 }
 
 @media only screen and (max-width: 980px) {
-  #about_img{
+  #about_img {
     float: none;
     margin: 0 auto;
   }
 
-  #about_description{
+  #about_description {
     width: 90%;
     text-align: center;
     font-size: 16px;
   }
 
-  #contact_form{
+  #contact_form {
     width: 90%;
   }
 }
 
 @media only screen and (max-width: 760px) {
-  #nav_bar ul{
+  #nav_bar ul {
     width: 70%;
   }
 
@@ -662,28 +669,28 @@ input{
     width: 19%;
   }
 
-  #about_description{
+  #about_description {
     padding: 0px;
     margin: 0 auto;
     width: 100%;
     font-size: 15px;
   }
 
-  #contact_form{
+  #contact_form {
     width: 95%;
   }
 }
 
 @media only screen and (max-width: 460px) {
-  hr{
+  hr {
     width: 30%;
   }
 
-  #nav_bar{
+  #nav_bar {
     height: 40px;
   }
 
-  #nav_bar ul{
+  #nav_bar ul {
     width: 100%;
   }
 
@@ -696,21 +703,21 @@ input{
     font-size: 11px;
   }
 
-  #name{
+  #name {
     font-size: 50px;
   }
 
-  #about_description{
+  #about_description {
     font-size: 12px;
   }
 
-  .connect_div{
+  .connect_div {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
   }
 
-  #created{
+  #created {
     height: 80px;
     width: 100%;
     font-size: 16px;
